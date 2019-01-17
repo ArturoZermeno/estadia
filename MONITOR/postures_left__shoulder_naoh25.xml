@@ -1,0 +1,14 @@
+<stm_viewer>
+    <stm_value name="Motion/Torque/Sensor/LShoulderPitch" alias="Motion/Torque/Sensor/LShoulderPitch" watch="1" graph="1">
+        <color red="79" green="238" blue="66" />
+    </stm_value>
+    <stm_value name="Motion/Position/Sensor/LShoulderPitch" alias="Motion/Position/Sensor/LShoulderPitch" watch="1" graph="1">
+        <color red="85" green="81" blue="239" />
+    </stm_value>
+    <stm_value name="Motion/IsMoving/LShoulderPitch" alias="Motion/IsMoving/LShoulderPitch" watch="1" graph="1">
+        <color red="4" green="198" blue="78" />
+    </stm_value>
+    <stm_value name="Diagnosis/Temperature/LShoulderPitch/Error" alias="Diagnosis/Temperature/LShoulderPitch/Error" watch="1" graph="1">
+        <color red="162" green="18" blue="44" />
+    </stm_value>
+</stm_viewer>

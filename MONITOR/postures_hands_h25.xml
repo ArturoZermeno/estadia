@@ -1,0 +1,8 @@
+<stm_viewer>
+    <stm_value name="Motion/Position/Sensor/RHand" alias="Motion/Position/Sensor/RHand" watch="1" graph="1">
+        <color red="54" green="214" blue="187" />
+    </stm_value>
+    <stm_value name="Motion/Position/Sensor/LHand" alias="Motion/Position/Sensor/LHand" watch="1" graph="1">
+        <color red="199" green="24" blue="160" />
+    </stm_value>
+</stm_viewer>
