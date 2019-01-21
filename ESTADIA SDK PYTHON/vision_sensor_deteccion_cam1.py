@@ -77,7 +77,7 @@ def streamVisionSensor(visionSensorName,clientID,pause=0.0001):
 
         print math.sqrt((x-(resolution[0]/2))**2)+((y-(resolution[1]/2))**2)
 
-        #almotion_controlling_joints.run(x)
+        almotion_controlling_joints.run(x)
 
 
         #Mostrar frame y salir con "ESC"
