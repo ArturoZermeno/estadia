@@ -5,6 +5,7 @@ from naoqi import ALProxy
 import time
 import almath
 import math
+from mpmath import *
 def main(robotIP,pos):
     PORT = 9559
 
@@ -16,12 +17,12 @@ def main(robotIP,pos):
         sys.exit(1)
     useSensors = False
     robotPosition     = almath.Pose2D(motionProxy.getRobotPosition(useSensors))
-    print  robotPosition[2]
-
-    cv2.waitKey(0)
 
 
-    motionProxy.setStiffnesses("LElbowYaw", 1.0)
+
+
+
+    motionProxy.setStiffnesses("HeadYaw", 1.0)
 
     # Simple command for the HeadYaw joint at 10% max speed
     names            = "HeadYaw"
@@ -32,6 +33,7 @@ def main(robotIP,pos):
     time.sleep(3.0)
     motionProxy.setStiffnesses("Head", 0.0)
 
+
 def run(x):
     robotIp = "127.0.0.1"
 
@@ -40,15 +42,12 @@ def run(x):
     else:
         robotIp = sys.argv[1]
     print x
-    pos=math.sqrt((320-x)*(320-x))
+    pos=(320-x)/47.5
     print pos
 
 
 
-    if pos<0:
-        pos=90
-    else:
-        pos=-90
+
 
     main(robotIp,pos)
 
